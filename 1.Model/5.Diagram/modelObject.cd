@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_1.Model.clsabstractHuman">
+    <Position X="7.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQACQAAAIAAGBAABQAASICACAgAAAAAAAAAAg=</HashCode>
+      <FileName>2.Abstract\clsabstractHuman.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_1.Model.clsAgency">
+    <Position X="12.5" Y="2.25" Width="1.5" />
+    <AssociationLine Name="clsListCLients" Type="_1.Model.clsListCLients" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.5" Y="6.657" />
+        <Point X="10.938" Y="6.657" />
+        <Point X="10.938" Y="7.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.427" Y="1.226" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="clsListEmployees" Type="_1.Model.clsListEmployees" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.5" Y="5.993" />
+        <Point X="8.438" Y="5.993" />
+        <Point X="8.438" Y="7.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-3.114" Y="1.915" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="clsListDirectorsAgency" Type="_1.Model.clsListDirectorsAgency" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.5" Y="5.423" />
+        <Point X="5.938" Y="5.423" />
+        <Point X="5.938" Y="7.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-3.692" Y="2.508" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAgAAIAgAFCAERwAAAIBACBCEAAAAAEIAgI=</HashCode>
+      <FileName>3.Objects\clsAgency.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsListCLients" />
+      <Property Name="clsListEmployees" />
+      <Property Name="clsListDirectorsAgency" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="_1.Model.clsBank">
+    <Position X="2.75" Y="1" Width="1.5" />
+    <AssociationLine Name="clsListAdmins" Type="_1.Model.clsListAdmins">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.156" Y="0.837" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="clsListDirectors" Type="_1.Model.clsListDirectors">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.825" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="clsListAgencies" Type="_1.Model.clsListAgencies" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="3.5" />
+        <Point X="5.75" Y="3.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.199" Y="0.132" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIAACAAAABAAkJIgAUAAARQAAAEAACgCAAAAAAAAAAI=</HashCode>
+      <FileName>3.Objects\clsBank.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsListAdmins" />
+      <Property Name="clsListDirectors" />
+      <Property Name="clsListAgencies" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="_1.Model.clsClient">
+    <Position X="10.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABAAAAAAAQAAAAggAAAEAAAAAABIAACAAAAAAAAAEQ=</HashCode>
+      <FileName>3.Objects\clsClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_1.Model.clsConnection">
+    <Position X="17.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAQAAAACAAAAQAAAAAAA=</HashCode>
+      <FileName>1.Connection\clsConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_1.Model.clsDataSource">
+    <Position X="15.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggAgAAAAAAAAAEAAAAABAEhAAQAAABAAAAAAAAAIAA=</HashCode>
+      <FileName>1.Connection\clsDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_1.Model.clsDate">
+    <Position X="10.25" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAJgAAAAAAAAAAAAAAAAAAAAAEAAAAEwAAAgA=</HashCode>
+      <FileName>3.Objects\clsDate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_1.Model.clsDirectorAgency">
+    <Position X="5.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAiAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>3.Objects\clsDirectorAgency.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_1.Model.clsEmployee">
+    <Position X="7.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAiAAAAQAAAAAAAAQEAAAAAABAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>3.Objects\clsEmployee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsDate" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="_1.Model.clsListAgencies">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <AssociationLine Name="clsAgency" Type="_1.Model.clsAgency">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.314" Y="0.169" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABIAAgAYAAAEIAAAAAAAAAAAgQAAAEA=</HashCode>
+      <FileName>4.Collections\clsListAgencies.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsAgency" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="_1.Model.clsListCLients">
+    <Position X="10.25" Y="7.75" Width="1.5" />
+    <AssociationLine Name="clsClient" Type="_1.Model.clsClient">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.097" Y="0.393" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAgAYAAgAoAAAAAAAAAAAgQAAAAA=</HashCode>
+      <FileName>4.Collections\clsListClients.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsClient" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="_1.Model.clsListDirectorsAgency">
+    <Position X="5.25" Y="7.75" Width="1.5" />
+    <AssociationLine Name="clsDirectorAgency" Type="_1.Model.clsDirectorAgency">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.148" Y="0.367" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAABAAAgAYAAAAIAAAAAAAAAAEgQAAAEA=</HashCode>
+      <FileName>4.Collections\clsListDirectorsAgency.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsDirectorAgency" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="_1.Model.clsListEmployees">
+    <Position X="7.75" Y="7.75" Width="1.5" />
+    <AssociationLine Name="clsEmployee" Type="_1.Model.clsEmployee">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.38" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAABAAAgAYAAAAIAAAAAAAAAAAgQAAAAI=</HashCode>
+      <FileName>4.Collections\clsListEmployees.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsEmployee" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="_1.Model.clsAdmin">
+    <Position X="0.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>3.Objects\clsAdmin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_1.Model.clsDirector">
+    <Position X="2.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAiAAAAwAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>3.Objects\clsDirector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_1.Model.clsListAdmins">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <AssociationLine Name="clsAdmin" Type="_1.Model.clsAdmin">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.098" Y="0.338" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAJAAAgAYAAAAIAAAAAAAAAAAgQAAAEA=</HashCode>
+      <FileName>4.Collections\clsListAdmins.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsAdmin" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="_1.Model.clsListDirectors">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <AssociationLine Name="clsDirector" Type="_1.Model.clsDirector">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.327" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAkAYIAAAIAAAAAAAAEAAAQAAAEA=</HashCode>
+      <FileName>4.Collections\clsListDirectors.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsDirector" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
