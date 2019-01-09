@@ -42,13 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsController.cs" />
-    <Compile Include="clsInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\1.Model\1.Model.csproj">
       <Project>{7aed6d05-9da0-41a4-b8cd-99dc65c7f4f7}</Project>
       <Name>1.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\4.Items\4.Items.csproj">
+      <Project>{c6e140ab-d8b2-409a-9266-ad230bba74b4}</Project>
+      <Name>4.Items</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

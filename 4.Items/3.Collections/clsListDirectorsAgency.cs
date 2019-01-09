@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-// MessageBox
-using System.Windows.Forms;
+using System.Threading.Tasks;
 
-namespace _1.Model
+namespace _4.Items
 {
     public class clsListDirectorsAgency
     {
@@ -18,27 +17,27 @@ namespace _1.Model
         /// <summary>
         /// Propierties -> Collection : ListDirectorAgency.
         /// </summary>
-        private Dictionary<string,clsDirectorAgency>  ListDirectorAgency;
+        private Dictionary<string, clsDirectorAgency> ListDirectorAgency;
         /// <summary>
         /// Constructor
         /// </summary>
         public clsListDirectorsAgency()
         {
-            ListDirectorAgency = new Dictionary<string,clsDirectorAgency>();
+            ListDirectorAgency = new Dictionary<string, clsDirectorAgency>();
         }
         /// <summary>
         /// Gets the number of the elements in the dictionary.
         /// </summary>
         public int Quantity
         {
-            get {return ListDirectorAgency.Values.Count;}
+            get { return ListDirectorAgency.Values.Count; }
         }
         /// <summary>
         /// Gets the collection of elements in the dictionary
         /// </summary>
-        public Dictionary<string,clsDirectorAgency>.ValueCollection Elements
+        public Dictionary<string, clsDirectorAgency>.ValueCollection Elements
         {
-            get {return ListDirectorAgency.Values; }
+            get { return ListDirectorAgency.Values; }
         }
 
         public clsDirectorAgency clsDirectorAgency
@@ -72,7 +71,7 @@ namespace _1.Model
         /// <returns>ListAgencies[agenceNumber]</returns>
         public clsDirectorAgency fncFind(string number)
         {
-            if(fncExist(number))
+            if (fncExist(number))
             {
                 return ListDirectorAgency[number];
             }
@@ -89,7 +88,7 @@ namespace _1.Model
         /// <returns>ListDirectorAgency.Add(director.vNumber, director) or false</returns>
         public bool fncAdd(clsDirectorAgency director)
         {
-            if(!fncExist(director.vNumber))
+            if (!fncExist(director.vNumber))
             {
                 ListDirectorAgency.Add(director.vNumber, director);
                 return true;
@@ -132,7 +131,7 @@ namespace _1.Model
         public string fncDisplay()
         {
             string info = "";
-            foreach(clsDirectorAgency director in ListDirectorAgency.Values)
+            foreach (clsDirectorAgency director in ListDirectorAgency.Values)
             {
                 info += director.fncDisplayHuman();
             }

@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-// Message Box
 using System.Windows.Forms;
 
-namespace _1.Model
+namespace _4.Items
 {
     /*
     * This project uses the following licenses:
@@ -41,7 +40,7 @@ namespace _1.Model
         /// <summary>
         /// Gets the collection of elements in the dictionary
         /// </summary>
-        public Dictionary<string,clsClient>.ValueCollection Elements
+        public Dictionary<string, clsClient>.ValueCollection Elements
         {
             get { return ListClients.Values; }
         }
@@ -70,7 +69,7 @@ namespace _1.Model
             {
                 return ListClients.ContainsKey(number);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error in funcion Exist  : " + ex.Message);
                 return false;
@@ -82,9 +81,9 @@ namespace _1.Model
         /// </summary>
         /// <param name="agenceNumber">string number</param>
         /// <returns>ListClients[number]</returns>
-        public clsClient fncFind( string number)
+        public clsClient fncFind(string number)
         {
-            if(fncExist(number))
+            if (fncExist(number))
             {
                 return ListClients[number];
             }
@@ -110,7 +109,7 @@ namespace _1.Model
         /// </summary>
         /// <param name="agenceNumber">string number</param>
         /// <returns>ListClients.Remove(number)</returns>
-        public bool fncErase( string number)
+        public bool fncErase(string number)
         {
             return ListClients.Remove(number);
         }
@@ -122,7 +121,7 @@ namespace _1.Model
         public string fncDisplay()
         {
             string info = "";
-            foreach(clsClient client in ListClients.Values)
+            foreach (clsClient client in ListClients.Values)
             {
                 info += client.fncDisplayHuman();
             }

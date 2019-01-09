@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 // Handle decisions
 using _3.Controller;
-using _1.Model;
+// Handle Items
+using _4.Items;
 
 
 namespace _2.View
@@ -18,7 +19,7 @@ namespace _2.View
     {
         public static clsBank myBank = new clsBank();
         public static clsAgency myAgency = new clsAgency();
-
+        
         public Transactions()
         {
             InitializeComponent();
@@ -54,7 +55,7 @@ namespace _2.View
         /// </summary>
         public void fncLoadDirectorsList()
         {
-            clsInfo Controller = new clsInfo();
+            clsController Controller = new clsController();
             myBank.vListDirectors = Controller.fncHandleListDirectors();
         }
         /// <summary>
@@ -62,7 +63,7 @@ namespace _2.View
         /// </summary>
         public void fncLoadAdminsList()
         {
-            clsInfo Controller = new clsInfo();
+            clsController Controller = new clsController();
             myBank.vListAdmins = Controller.fncHandleListAdmins();
         }
         /// <summary>
@@ -70,15 +71,16 @@ namespace _2.View
         /// </summary>
         public void fncLoadAgenciesList()
         {
-            clsInfo Controller = new clsInfo();
+            clsController Controller = new clsController();
             myBank.vListAgencies = Controller.fncHandleListAgencies();
+            gvAgencies.DataSource = myBank.vListAgencies;
         }
         /// <summary>
         /// Load list Directors
         /// </summary>
         public void fncLoadDirectorsAgencyList()
         {
-            clsInfo Controller = new clsInfo();
+            clsController Controller = new clsController();
             myAgency.vListDirectorsAgency = Controller.fncHandleListDirectorsAgency();
         }
         /// <summary>
@@ -86,7 +88,7 @@ namespace _2.View
         /// </summary>
         public void fncLoadEmployeesList()
         {
-            clsInfo Controller = new clsInfo();
+            clsController Controller = new clsController();
             myAgency.vListEmployees = Controller.fncHandleListEmployees();
         }
 
@@ -189,7 +191,7 @@ namespace _2.View
 
         private void LoadtranCmbAgencies()
         {
-            clsInfo Controller = new clsInfo();
+            clsController Controller = new clsController();
             cmbtranAgencies.DataSource = Controller.AgenciesList();
             cmbtranAgencies.DisplayMember = "Agency";
             cmbtranAgencies.ValueMember = "idagencies";
@@ -214,7 +216,7 @@ namespace _2.View
 
         private void cmbtranAgencies_SelectedIndexChanged(object sender, EventArgs e)
         {
-            clsInfo Controller = new clsInfo();
+            clsController Controller = new clsController();
             string stringcmboxAgencies = cmbtranAgencies.Text.Trim();
             DataTable Table = new DataTable();
             string stringNumber = txtNumerodeClient.Text.Trim();

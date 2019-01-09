@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1.Model
+namespace _4.Items
 {
     /*
     * This project uses the following licenses:
@@ -43,7 +43,7 @@ namespace _1.Model
         /// <summary>
         /// Constructor empty.
         /// </summary>
-        public clsEmployee(): base()
+        public clsEmployee() : base()
         {
             Salary = 0;
             Idagencies = 0;
@@ -54,14 +54,14 @@ namespace _1.Model
         /// </summary>
         public decimal vSalary
         {
-            get {return Salary;}
-            set{Salary = value;} 
+            get { return Salary; }
+            set { Salary = value; }
         }
 
         public int vIdagencies
         {
-            get {return Idagencies;}
-            set{Idagencies = value;}
+            get { return Idagencies; }
+            set { Idagencies = value; }
         }
 
         //public clsDate vHiringDate

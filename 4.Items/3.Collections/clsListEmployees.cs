@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-// Message
 using System.Windows.Forms;
-namespace _1.Model
+
+namespace _4.Items
 {
     /*
     * This project uses the following licenses:
@@ -36,7 +36,7 @@ namespace _1.Model
         /// <summary>
         /// Gets the collection of elements in the dictionary
         /// </summary>
-        public Dictionary<string,clsEmployee>.ValueCollection Elements
+        public Dictionary<string, clsEmployee>.ValueCollection Elements
         {
             get { return ListEmployees.Values; }
         }
@@ -66,7 +66,7 @@ namespace _1.Model
             {
                 return ListEmployees.ContainsKey(number);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error in funcion Exist  : " + ex.Message);
                 return false;
@@ -80,7 +80,7 @@ namespace _1.Model
         /// <returns>ListAgencies[agenceNumber]</returns>
         public clsEmployee fncFind(string number)
         {
-            if(fncExist(number))
+            if (fncExist(number))
             {
                 return ListEmployees[number];
             }
@@ -118,7 +118,7 @@ namespace _1.Model
         public string fncDisplay()
         {
             string info = "";
-            foreach(clsEmployee employee in ListEmployees.Values)
+            foreach (clsEmployee employee in ListEmployees.Values)
             {
                 info += employee.fncDisplayHuman();
             }

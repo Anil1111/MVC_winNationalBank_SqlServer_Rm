@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1.Model
+namespace _4.Items
 {
     /*
-    * This project uses the following licenses:
-    *  MIT License
-    *  Copyright (c) 2018 Ricardo Mendoza
-    *  Montréal Québec Canada
-    */
+   * This project uses the following licenses:
+   *  MIT License
+   *  Copyright (c) 2018 Ricardo Mendoza
+   *  Montréal Québec Canada
+   */
     public abstract class clsabstractHuman
     {
         /// <summary>
@@ -31,7 +31,7 @@ namespace _1.Model
         /// </summary>
         public clsabstractHuman(int vId, string vNumber, string vName, string vLastName, string vEmail, string vImg, string vActive, string vSexe)
         {
-            Id=0;
+            Id = 0;
             Number = vNumber;
             Name = vName;
             LastName = vLastName;
@@ -61,49 +61,49 @@ namespace _1.Model
         /// </summary>
         public int vId
         {
-            get{ return Id;}
-            set{Id = value;}
+            get { return Id; }
+            set { Id = value; }
         }
         public string vNumber
         {
-            get{ return Number;}
-            set{Number = value;}
+            get { return Number; }
+            set { Number = value; }
         }
 
         public string vName
         {
-            get{return Name;}
-            set {Name = value;}
+            get { return Name; }
+            set { Name = value; }
         }
 
         public string vLastName
         {
-            get {return LastName; }
-            set{LastName = value;} 
+            get { return LastName; }
+            set { LastName = value; }
         }
 
         public string vEmail
         {
-            get {return Email;}
-            set {Email = value;}
+            get { return Email; }
+            set { Email = value; }
         }
 
         public string vImg
         {
-            get{return Img;}
-            set {Img = value;}
+            get { return Img; }
+            set { Img = value; }
         }
 
         public string vActive
         {
-            get{return Active;}
-            set{ Active = value;}
+            get { return Active; }
+            set { Active = value; }
         }
 
         public string vSexe
         {
-            get{return Sexe;}
-            set{Sexe = value;}
+            get { return Sexe; }
+            set { Sexe = value; }
         }
 
         /// <summary>
@@ -112,8 +112,8 @@ namespace _1.Model
         public virtual string fncDisplayHuman()
         {
             string info = "";
-            info +="\nId : " + Id;
-            info = info + "\nNumber"+ Number;
+            info += "\nId : " + Id;
+            info = info + "\nNumber" + Number;
             info = info + "\nName" + Name;
             info = info + "\nLastName" + LastName;
             info = info + "\nLastName" + Email;

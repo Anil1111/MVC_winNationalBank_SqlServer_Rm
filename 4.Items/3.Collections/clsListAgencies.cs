@@ -3,23 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-// MessageBox
 using System.Windows.Forms;
 
-namespace _1.Model
+namespace _4.Items
 {
     /*
-    * This project uses the following licenses:
-    *  MIT License
-    *  Copyright (c) 2018 Ricardo Mendoza
-    *  Montréal Québec Canada
-    */
+     * This project uses the following licenses:
+     *  MIT License
+     *  Copyright (c) 2018 Ricardo Mendoza
+     *  Montréal Québec Canada
+     */
     public class clsListAgencies
     {
         /// <summary>
         /// Propierties -> Collection : ListAgencies.
         /// </summary>
-        private Dictionary<string, clsAgency>ListAgencies;
+        private Dictionary<string, clsAgency> ListAgencies;
         /// <summary>
         /// Constructor
         /// </summary>
@@ -37,7 +36,7 @@ namespace _1.Model
         /// <summary>
         /// Gets the collection of elements in the dictionary
         /// </summary>
-        public Dictionary<string,clsAgency>.ValueCollection Elements
+        public Dictionary<string, clsAgency>.ValueCollection Elements
         {
             get { return ListAgencies.Values; }
         }
@@ -67,7 +66,7 @@ namespace _1.Model
             {
                 return ListAgencies.ContainsKey(number);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error in funcion Exist  : " + ex.Message);
                 return false;
@@ -81,7 +80,7 @@ namespace _1.Model
         /// <returns>ListAgencies[agenceNumber]</returns>
         public clsAgency fncFind(string number)
         {
-            if(fncExist(number))
+            if (fncExist(number))
             {
                 return ListAgencies[number];
             }
@@ -99,12 +98,12 @@ namespace _1.Model
         public bool fncAdd(clsAgency agency)
         {
             ListAgencies.Add(agency.vNumber, agency);
-            return true; 
+            return true;
         }
 
         public bool fncUpdate(clsAgency agency)
         {
-            if(ListAgencies.ContainsKey(agency.vNumber))
+            if (ListAgencies.ContainsKey(agency.vNumber))
             {
                 ListAgencies.Remove(agency.vNumber);
             }
@@ -129,7 +128,7 @@ namespace _1.Model
         public string fncDisplay()
         {
             string info = "";
-            foreach(clsAgency agency in ListAgencies.Values)
+            foreach (clsAgency agency in ListAgencies.Values)
             {
                 info += agency.fncDisplayAgency();
             }

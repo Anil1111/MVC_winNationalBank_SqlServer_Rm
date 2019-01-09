@@ -7,6 +7,7 @@ using System.Windows.Forms; // MsgBox
 // Data
 using System.Data;
 using System.Data.SqlClient;
+using _4.Items;
 
 namespace _1.Model
 {
@@ -61,6 +62,7 @@ namespace _1.Model
                 }
                 // 7. Close Read Connection
                 Read.Close();
+                Connection.CloseConnection();
                 // 8. Make the return
                 return ListDirectors;
             }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1.Model
+namespace _4.Items
 {
     public class clsListDirectors
     {
@@ -35,7 +35,7 @@ namespace _1.Model
         /// <summary>
         /// Gets the collection of elements in the dictionary
         /// </summary>
-        public Dictionary<string,clsDirector>.ValueCollection Elements
+        public Dictionary<string, clsDirector>.ValueCollection Elements
         {
             get { return ListDirectors.Values; }
         }
@@ -71,7 +71,7 @@ namespace _1.Model
         /// <returns>ListAgencies[agenceNumber]</returns>
         public clsDirector fncFind(string number)
         {
-            if(fncExist(number))
+            if (fncExist(number))
             {
                 return ListDirectors[number];
             }
@@ -131,7 +131,7 @@ namespace _1.Model
         public string fncDisplay()
         {
             string info = "";
-            foreach(clsDirector director in ListDirectors.Values)
+            foreach (clsDirector director in ListDirectors.Values)
             {
                 info += director.fncDisplayHuman();
             }

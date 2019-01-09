@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1.Model
+namespace _4.Items
 {
     /*
     * This project uses the following licenses:
@@ -26,8 +26,8 @@ namespace _1.Model
         /// Constructor
         /// </summary>
         public clsClient(int vId, string vNumber, string vName, string vLastName, string vEmail, string vImg, string vActive, string vSexe,
-                         string vAddress, string vCardNumber, string vNip, int vIdagencies, int vIdemployee) 
-                         : base (vId, vNumber, vName, vLastName, vEmail, vImg, vActive, vSexe)
+                         string vAddress, string vCardNumber, string vNip, int vIdagencies, int vIdemployee)
+                         : base(vId, vNumber, vName, vLastName, vEmail, vImg, vActive, vSexe)
         {
             Address = vAddress;
             CardNumber = vCardNumber;
@@ -38,7 +38,7 @@ namespace _1.Model
         /// <summary>
         /// Constructor empty.
         /// </summary>
-        public clsClient(): base()
+        public clsClient() : base()
         {
             Address = fncEmptyConstructor();
             CardNumber = fncEmptyConstructor();
@@ -51,32 +51,32 @@ namespace _1.Model
         /// </summary>
         public string vAddress
         {
-            get{return Address; }
-            set{ Address = value;}  
+            get { return Address; }
+            set { Address = value; }
         }
 
         public string vCardNumber
         {
-            get{return CardNumber; }
-            set{CardNumber = value;}
+            get { return CardNumber; }
+            set { CardNumber = value; }
         }
 
         public string vNip
         {
-            get{ return Nip; }
-            set{Nip = value; }
+            get { return Nip; }
+            set { Nip = value; }
         }
 
         public int vIdagencies
         {
-            get{ return Idagencies;}
-            set { Idagencies = value;}
+            get { return Idagencies; }
+            set { Idagencies = value; }
         }
 
         public int vIdemployee
         {
-            get {return Idemployee; }
-            set {Idemployee = value;}
+            get { return Idemployee; }
+            set { Idemployee = value; }
         }
 
         /// Override Methods.

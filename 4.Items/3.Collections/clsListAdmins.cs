@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1.Model
+namespace _4.Items
 {
     public class clsListAdmins
     {
@@ -20,7 +20,7 @@ namespace _1.Model
             get { return ListAdmins.Values.Count; }
         }
 
-        public Dictionary<string,clsAdmin>.ValueCollection Elements
+        public Dictionary<string, clsAdmin>.ValueCollection Elements
         {
             get { return ListAdmins.Values; }
         }
@@ -44,7 +44,7 @@ namespace _1.Model
 
         public clsAdmin fncFind(string number)
         {
-            if(fncExist(number))
+            if (fncExist(number))
             {
                 return ListAdmins[number];
             }
@@ -56,7 +56,7 @@ namespace _1.Model
 
         public bool fncAdd(clsAdmin admin)
         {
-            if(!fncExist(admin.vNumber))
+            if (!fncExist(admin.vNumber))
             {
                 ListAdmins.Add(admin.vNumber, admin);
                 return true;
@@ -69,7 +69,7 @@ namespace _1.Model
 
         public bool fncUpdate(clsAdmin admin)
         {
-            if(ListAdmins.ContainsKey(admin.vNumber))
+            if (ListAdmins.ContainsKey(admin.vNumber))
             {
                 ListAdmins.Remove(admin.vNumber);
             }
@@ -85,7 +85,7 @@ namespace _1.Model
         public string fncDisplay()
         {
             string info = "";
-            foreach(clsAdmin admin in ListAdmins.Values)
+            foreach (clsAdmin admin in ListAdmins.Values)
             {
                 info = info + admin.fncDisplayHuman();
             }

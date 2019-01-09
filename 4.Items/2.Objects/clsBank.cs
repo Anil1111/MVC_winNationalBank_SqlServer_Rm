@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace _1.Model
-{ 
+namespace _4.Items
+{
     /*
     * This project uses the following licenses:
     *  MIT License
@@ -29,13 +30,13 @@ namespace _1.Model
         public clsBank(int vIdBank, string vName, string vAddress, float vCapital,
                        clsListDirectors vListDirectors, clsListAdmins vListAdmins, clsListAgencies vListAgencies)
         {
-            IdBank=vIdBank;
-            Name=vName;
-            Address=vAddress;
-            Capital=vCapital;
+            IdBank = vIdBank;
+            Name = vName;
+            Address = vAddress;
+            Capital = vCapital;
             ListDirectors = vListDirectors;
             ListAdmins = vListAdmins;
-            ListAgencies=vListAgencies;
+            ListAgencies = vListAgencies;
         }
         /// <summary>
         /// Constructor empty
@@ -65,14 +66,14 @@ namespace _1.Model
 
         public string vAddress
         {
-            get {return Address; }
-            set{Address = value;} 
+            get { return Address; }
+            set { Address = value; }
         }
 
         public float vCapital
         {
-            get{ return Capital;}
-            set {Capital = value;}
+            get { return Capital; }
+            set { Capital = value; }
         }
 
         public clsListDirectors vListDirectors
@@ -83,8 +84,8 @@ namespace _1.Model
 
         public clsListAdmins vListAdmins
         {
-            get{return ListAdmins;}
-            set{ListAdmins = value;} 
+            get { return ListAdmins; }
+            set { ListAdmins = value; }
         }
 
         public clsListAgencies vListAgencies
@@ -135,8 +136,8 @@ namespace _1.Model
         public string fncDisplay()
         {
             string info = "";
-            info +="\nIdBank" + IdBank;
-                
+            info += "\nIdBank" + IdBank;
+
             info += "\nName" + Name;
             info += "\nAddress" + Address;
             info += "\nCapital" + Capital;

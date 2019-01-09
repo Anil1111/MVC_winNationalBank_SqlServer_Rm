@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1.Model
+namespace _4.Items
 {
     /*
     * This project uses the following licenses:
@@ -82,38 +82,38 @@ namespace _1.Model
         /// </summary>
         public int vIdagencies
         {
-            get {return Idagencies;}
-            set{ Idagencies = value;}  
+            get { return Idagencies; }
+            set { Idagencies = value; }
         }
 
         public string vNumber
         {
-            get{return Number;}
-            set{ Number = value;}
+            get { return Number; }
+            set { Number = value; }
         }
 
         public string vName
         {
-            get{return Name;}
-            set{Name = value;}
+            get { return Name; }
+            set { Name = value; }
         }
 
         public string vAddress
         {
-            get{return Address;}
-            set { Address = value;}
+            get { return Address; }
+            set { Address = value; }
         }
 
         public int vIdbank
         {
-            get{ return Idbank;}
-            set{Idbank = value;}
+            get { return Idbank; }
+            set { Idbank = value; }
         }
 
         public int vIdtdirectorAgencie
         {
-            get {return IdtdirectorAgencie;}
-            set {IdtdirectorAgencie = value;}
+            get { return IdtdirectorAgencie; }
+            set { IdtdirectorAgencie = value; }
         }
 
         public clsListDirectorsAgency vListDirectorsAgency
@@ -124,14 +124,14 @@ namespace _1.Model
 
         public clsListEmployees vListEmployees
         {
-            get { return ListEmployees;}
-            set{ListEmployees = value;}  
+            get { return ListEmployees; }
+            set { ListEmployees = value; }
         }
 
         public clsListCLients vListClients
         {
-            get{return ListClients;}
-            set{ListClients = value;}
+            get { return ListClients; }
+            set { ListClients = value; }
         }
 
         public clsListCLients clsListCLients
