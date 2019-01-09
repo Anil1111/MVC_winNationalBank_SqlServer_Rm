@@ -6,10 +6,10 @@ Winter - 2017
 
 ## Description
 
-In this project we will develop a Bank Application able to make Deposit, Withdraw and Consult. The app will handle by an administrator Directors, Agencies, customers, the diferent accounts and reports. The app will includ concepts of Object Oriented Programming, the relationship between classes, the MVC (model, view, controller) philosophy in  C # .NET and data base with Sql Server.
+In this project we will develop a Bank Application able to make Deposit, Withdraw and Consult. The app will be handle by an admin to administrate directors, agencies, customers, the diferent accounts and reports. The app will includ concepts of Object Oriented Programming, the relationship between classes, the MVC (model, view, controller) philosophy in  C # .NET and data base with Sql Server.
 
 
-### This project focus in the Object Oriented Programming.
+### This project will focus in the bank application.
 
 
 ### Problem
@@ -213,6 +213,14 @@ Identify families of algorithms as a group technology, gather them and make them
  * Microsoft Visual Studio Community 2015 Version 14.0.25425.01 Update 3
  * Programming language : C#.
  * Object Oriented Programming.
+ * SQL server Management Studio v17.9.
+ * Programming language : SQL Server.
+ * MVC Concepts.
+ 
+ 
+ #### Videos
+ 
+ * [Understanding MVC architecture](https://www.youtube.com/watch?v=eTdVkgF_Slo)
  
  
 ## Installation
@@ -220,9 +228,40 @@ Identify families of algorithms as a group technology, gather them and make them
 ### Download and install. 
 
  * [Install Visual Studio](https://visualstudio.microsoft.com/)
- * [Dowland the MVC_ComboBox_selector project](https://github.com/RicardoAMendoza/The_NationalBank_Rm)
+ * [Install SQL Server](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads)
+ * [Dowland the MVC NationalBank SqlServer project](https://github.com/RicardoAMendoza/MVC_winNationalBank_SqlServer_Rm)
  
  
+### Create the database with SQl server. 
+
+1.- Create the data base : open SQL Server Management Studio, open a new query and run SqlServer/1_init_DataBase.sql
+
+[MVC_winapp_ComboBox_selector/SqlServer/1_init_DataBase.sql](https://github.com/RicardoAMendoza/MVC_winNationalBank_SqlServer_Rm/blob/master/SqlServer/1_init_DataBase.sql)
+
+2.- Create the Stored Procedures : run SqlServer/2_create_StoredProcedures.sql
+
+[MVC_winapp_ComboBox_selector/SqlServer/2_create_StoredProcedures.sql](https://github.com/RicardoAMendoza/MVC_winNationalBank_SqlServer_Rm/blob/master/SqlServer/2_create_StoredProcedures.sql)
+
+3.- Fill up the tables : run SqlServer/3_fill_Tables.sql
+
+[MVC_winapp_ComboBox_selector/SqlServer/3_fill_Tables.sql](https://github.com/RicardoAMendoza/MVC_winNationalBank_SqlServer_Rm/blob/master/SqlServer/3_fill_Tables.sql)
+
+4.- Create Views : run SqlServer/4_create_Views.sql
+
+[MVC_winapp_ComboBox_selector/SqlServer/4_create_Views.sql](https://github.com/RicardoAMendoza/MVC_winNationalBank_SqlServer_Rm/blob/master/SqlServer/4_create_Views.sql)
+
+5.- The class clsConnection connects the SQL Server and the Visual Studio.
+
+```
+static private string stringConnection = "Data Source = .; DataBase = bd_NationalBank; Integrated Security = true";
+```
+
+
+### Data Base Diagram.
+
+![DataBaseDiagram](/img/databaseDiagrame.jpg "DataBaseDiagram")
+
+
 ## Author
 
 * **Ricardo Mendoza -  Programmer Analyst**
