@@ -1,12 +1,12 @@
-# OOP winapp The National Bank
+# MVC winapp The National Bank
 
-## Project name : prjWin_NationalBank_Rm
+## Project name : prjWin_MVC_NationalBank_SqlServer_Rm
 
-Été-2017
+Winter - 2017
 
 ## Description
 
-In this project we will introduce concepts of Object Oriented Programming and the relationship between classes.
+In this project we will develop a Bank Application able to make Deposit, Withdraw and Consult. The app will handle by an administrator Directors, Agencies, customers, the diferent accounts and reports. The app will includ concepts of Object Oriented Programming, the relationship between classes, the MVC (model, view, controller) philosophy in  C # .NET and data base with Sql Server.
 
 
 ### This project focus in the Object Oriented Programming.
